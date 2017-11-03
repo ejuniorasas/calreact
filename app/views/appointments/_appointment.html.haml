@@ -1,0 +1,6 @@
+%div.row
+  - @appointments.each do |a|
+    %div.card.border-success.p-4.card-appt
+      %div.card-body.text-success
+        %h3.card-title= a.title
+        %p.card-text= a.appt_time
